@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="js/slider.js"></script>
+</head>
+<body onload="showSlides(slideNum)">
+	<div class="header">
+		<div class="head-logo">
+			TRAVEL NEPAL
+			<span class="title">Travel Heaven</span>
+		</div>
+		<div class="head-right">
+			Tel: 01-4444444| Mail: mail@travelnepal.com
+			<div class="head-search">
+				<input type="search" name="search" placeholder="Search Our Website..."><button>Search</button>
+			</div>
+		</div>
+	</div>
+	<div class="top-nav">
+		
+			<a href="index.html">homepage</a>
+			<a href="about.html">about</a>
+			<a href="blog.html">blogs</a>
+			<div class="dropdown">
+			<a href="#">Gallery</a>
+				<div class="dropdown-menu">
+					<a href="gallery.html">Popular</a>
+					<a href="gallery2.html">Recommended</a>
+				</div>
+			</div>
+			<a href="contact.html">Contact</a>
+	</div>
+
+	<div class="main-content">
+
+<!----------------------------------------------------------------------------------------------------------------
+-------------------------------------	START CONTENT SECTION-----------------------------------------------------
+-------------------------------------------------------------------------------------------------------------->
+		<center>Browse some of our galleries.</center>
+		
+	<div class="img-section">
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/annapurna.jpg">
+			<font style="color: white;">Annapurna Massif</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src ="img/gallery/annapurna-circuit.jpg">
+			<font style="color: white;">Annapurna Circuit</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/bds.jpg">
+			<font style="color: white;">Bhaktapur Durbar Square</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/bnp.jpg">
+			<font style="color: white;">Bardiya National Park</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/cnp.jpg">
+			<font style="color: white;">Chitwan National Park</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/dhaulagiri.jpg">
+			<font style="color: white;">Dhaulagiri</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/helambu.jpg">
+			<font style="color: white;">Helambu</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/ktmvalley.jpg">
+			<font style="color: white;">Kathmandu Valley</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/lnp.jpg">
+			<font style="color: white;">Langtang National Park</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/Mtbasecamp.jpg">
+			<font style="color: white;">Everest Base Camp</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/muktinath.jpg">
+			<font style="color: white;">Muktinath</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/pokhara.jpg">
+			<font style="color: white;">Pokhara</font>
+		</div>
+		<div class="img-cont"><img onclick="imgPre(this);" class="img-thum" src = "img/gallery/thamel.jpg">
+			<font style="color: white;">Thamel</font>
+		</div>
+	
+	</div>
+	<div id="img-large" class="img-large">
+		<span onclick="document.getElementById('img-large').style.display='none'" id="img-close" class="img-close">X</span>
+    <img id="img01" class="w3-image">
+ 
+  </div>
+
+
+
+	<script type="text/javascript">
+	function imgPre(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("img-large").style.display = "block";
+  
+	}
+	</script>
+
+
+
+<!------------------------------------------------------------------------------------------------------------------
+------------------------------------------	END OF CONTENT SECTION-------------------------------------------------
+	---------------------------------------------------------------------------------------------------------------->
+
+
+
+
+	<br>
+	<hr class="style">
+	<br>
+	<div class="footer">
+		<div class="footer-contact footer-content">
+			<span class="footer-content-title">Contact Details</span>
+			<p>
+			Travel Nepal<br>
+			Gongabu Chowk<br>
+			Kathmandu<br>
+			44600<br><br>
+			Tel: 01-4444444<br>
+			Fax: xxxxx xxxxxxxxxx<br>
+			Email: <span class="mail-text">mail@travelnepal.com</span>
+		</p>
+		</div>
+		<div class="footer-quick-links footer-content">
+			<span class="footer-content-title">Quick Links</span>
+				<a href="index.html">Home</a>
+				<hr>
+				<a href="blog.html">Blog</a>
+				<hr>
+				<a href="gallery.html">Gallery</a>
+				<hr>
+				<a href="about.html">About</a>
+				<hr>
+				<a href="contac.html">Contact</a>
+		</div>
+		<div class="footer-blog-post footer-content">
+		<span class="footer-content-title">From The Blog</span>
+		<span class="blog-title">Why Travelling?</span>
+		<p>Posted by admin on 18.02.018</p>
+		<p>Traveling is one of my favourite activities. I try to travel as much as I can and visit different places at least once a year. </p>
+		<a href="blog.html"><button>Read More &#8811;</button></a>
+		</div>
+		<div class="footer-newsletter footer-content">
+			<span class="footer-content-title">Grab Our Newsletter</span>
+			<form>
+			<input type="text" name="newsletter-name" placeholder="Name" required>
+			<input type="email" name="newsletter-email" placeholder="Email" required>
+			<input type="submit" name="" value="Submit">
+		</form>
+		</div>
+	</div>
+	<div class="copyright">
+	Copyright &copy; 2018 - All Rights Reserved - Travel Nepal
+	<span class="temp-credit">Template by OS Templates</span>
+	</div>
+</div>
+
+
+</body>
+</html>
